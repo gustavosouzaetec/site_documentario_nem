@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    background-color: #261C15;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+#menu ul li a:hover {
+    color: #bebebe;
+}
+
+.content {
+    height: 503px;
+    width: 754px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #fff;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    height: 100%;
+}
+
+.slide {
+    width: 33.33%;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .slide-s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .slide-s1 {
+    margin-left: -56%;
+}
+
+#slide3:checked ~ .slide-s1 {
+    margin-left: -334%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 90%;
+    width: 100%;
+    height: 45%;
+    background-color: #261C15;
+    color: #fff;
+}
+
+.text h1 {
+    font-size: 150%;
+    width: 55%;
+}
+
+.text p {
+    font-size: 100%;
+    text-align: justify;
+    width: 55%;
+}
+
+.video-doc {
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    top: 175%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 1280px) and (max-width: 1366px) {
+    .content {
+        top: 60%;
+    }
+
+    .text {
+        top: 110%;
+        height: 55%;
+    }
+
+    .video-doc {
+        top: 220%;
+    }
+}

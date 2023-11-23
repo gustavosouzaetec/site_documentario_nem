@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&family=Raleway:wght@500&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin-bottom: 5%;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    background-color: #261C15;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: color .3s;
+}
+
+#menu ul li a:hover {
+    color: #bebebe;
+}
+
+.two-d {
+    display: flex;
+}
+
+.two-d:last-child {
+    margin-top: 80%;
+}
+
+.desenvolvedor {
+    margin-top: 5%;
+    width: 45%;
+    display: flex;
+    padding: 10px;
+    border: 2px solid #9c9c9c;
+    box-shadow: 12px 12px 0px 0px rgba(156,156,156,1);
+}
+
+.desenvolvedor img {
+    width: 50%;
+    border-radius: 50%;
+    border: 2px solid #9c9c9c;
+}
+
+.desenvolvedor .informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3%;
+    text-align: center;
+}
+
+.desenvolvedor .informacoes h1 {
+    font-size: 140%;
+}
